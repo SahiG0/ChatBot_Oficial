@@ -1,0 +1,93 @@
+body {
+    background-color: #003851;
+}
+
+#pff {
+    color: #BFD2D9;
+    font: caption;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 5%;
+    margin-left: 50%;
+
+}
+#mgcel {
+    margin-top:1%;
+    margin-left: 25%;
+}
+
+.card1 {
+    justify-content: center;
+    margin-top:2%;
+    margin-left: 5%;
+    background-color: #C4C6C6;
+    border: 1px solid #003851;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 50px;
+    max-width: 170px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card2 {
+    justify-content: center;
+    margin-top:2%;
+    margin-left: 5%;
+    background-color: #C4C6C6;
+    border: 1px solid #003851;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 50px;
+    max-width: 170px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card3 {
+    justify-content: center;
+    margin-top:2%;
+    margin-left: 5%;
+    background-color: #C4C6C6;
+    border: 1px solid #003851;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-height: 50px;
+    max-width: 170px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.card1:hover {
+    transform: scale(1.05);
+}
+
+.card2 :hover {
+    transform: scale(1.05);
+}
+
+.card3 :hover {
+    transform: scale(1.05);
+}
+
+#linea {
+    
+}
+.question {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.answer {
+    font-size: 16px;
+    color: #333;
+    display: none;
+    margin-top: 10px;
+}
+
