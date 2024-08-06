@@ -63,7 +63,7 @@ body {
     cursor: pointer;
     transition: transform 0.3s;
 }
-.card1:hover {
+.card1 :hover {
     transform: scale(1.05);
 }
 
@@ -75,9 +75,6 @@ body {
     transform: scale(1.05);
 }
 
-#linea {
-    
-}
 .question {
     font-size: 18px;
     font-weight: bold;
