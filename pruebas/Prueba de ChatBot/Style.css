@@ -65,10 +65,13 @@ body {
 }
 .card1 :hover {
     transform: scale(1.05);
+
+
 }
 
 .card2 :hover {
     transform: scale(1.05);
+    position: right ;
 }
 
 .card3 :hover {
@@ -88,3 +91,58 @@ body {
     margin-top: 10px;
 }
 
+button{
+    display: flex;
+    margin: auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.layout {
+    width: 100%;
+  
+    display: grid;
+    grid:
+      "header header header" auto
+      "celular preguntas espaciolibre" 1fr
+      "footer footer footer" auto
+      / 150fr 125fr 125fr;
+    gap: 8px;
+  }
+  
+  .header { grid-area: header; }
+  .celular { grid-area: celular;}
+  .preguntas {grid-area: preguntas; }
+  .espaciolibre {grid-area: espaciolibre;}
+  .footer { grid-area: footer; margin-left: 0px;}
+
+  .grid {
+    margin-left:410px ;
+  
+    display: grid;
+    grid-template-rows: repeat(3, 0fr);
+    grid-template-columns: repeat(2, 300px);
+    gap: 8px;
+  }
+.chat{
+    
+    position: fixed;
+    height: 70px;
+    width: 100px;
+    bottom: 8%;
+    right: 30px;
+    background: #003851;
+    color: #dee8ec;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px;
+    z-index: 100;
+    
+}
+
+.chat 
+
+.imagen{
+    border-radius: 20px;
+}
