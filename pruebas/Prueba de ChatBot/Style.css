@@ -24,81 +24,51 @@ body {
     margin-left: 25%;
 }
 
-.card1 {
-    justify-content: center;
-    margin-top:2%;
-    margin-left: 5%;
-    background-color: #C4C6C6;
-    border: 1px solid #003851;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-height: 60px;
-    max-width: 170px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
 
-.card2 {
+.card {
+    position: relative;
     justify-content: center;
     margin-top:2%;
     margin-left: 5%;
     background-color: #C4C6C6;
     border: 1px solid #003851;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 40px;
-    height: var(--altocaja);
-    width: var(--anchocaja);
-    cursor: pointer;
-    transition: transform 0.3s;
     text-align: center;
 }
 
-.card3 {
+.card .div {
+    position:absolute;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top:2%;
-    margin-left: 5%;
+    backface-visibility: hidden;
+}
+.card .front {
     background-color: #C4C6C6;
-    border: 1px solid #003851;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-height: 50px;
-    max-width: 170px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-.card1 :hover {
-    transform: scale(1.05);
-
-
-}
-
-.card2 :hover {
-    transform: scale(1.05);
-    position: right ;
-}
-
-.card3 :hover {
-    transform: scale(1.05);
-}
-
-.question {
+    transform: perspective(500px) rotateY(0deg);
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
-   
 }
 
-.answer {
+.card .back {
+    background-color: #003851;
+    transform: perspective(500px) rotateY(180deg);
     font-size: 16px;
     color: #333;
     display: none;
     margin-top: 10px;
+}
+
+.card:hover .front {
+    transform: perspective(500px) rotateY(180deg);
+}
+
+
+.card:hover .back {
+    transform: perspective(500px) rotateY(360deg);
 }
 
 button{
@@ -125,23 +95,6 @@ button{
   .rightSide { grid-area: rightSide; }
   .footer { grid-area: footer; 
 }
-.chat{
-    
-    position: fixed;
-    height: 70px;
-    width: 100px;
-    bottom: 8%;
-    right: 30px;
-    background: #003851;
-    color: #dee8ec;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px;
-    z-index: 100;
-    
-}
-
 
 
 
