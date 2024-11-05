@@ -1,9 +1,17 @@
+:root{
+    --anchocaja: 80px;
+    --altocaja: 80px
+}
+
 body {
-    background-color: #003851;
+    background-image: url("./imgs/pagina\ web.png");
+    font-family: 'poppins', sans-serif;
+    position: relative;
+
 }
 
 #pff {
-    color: #BFD2D9;
+    color: #003851;
     font: caption;
     font-weight: bold;
     font-size: 40px;
@@ -25,7 +33,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    max-height: 50px;
+    max-height: 60px;
     max-width: 170px;
     text-align: center;
     cursor: pointer;
@@ -40,12 +48,12 @@ body {
     border: 1px solid #003851;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-height: 50px;
-    max-width: 170px;
-    text-align: center;
+    padding: 40px;
+    height: var(--altocaja);
+    width: var(--anchocaja);
     cursor: pointer;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 .card3 {
@@ -79,9 +87,11 @@ body {
 }
 
 .question {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
+    text-align: center;
+   
 }
 
 .answer {
@@ -104,26 +114,17 @@ button{
     display: grid;
     grid:
       "header header header" auto
-      "celular preguntas espaciolibre" 1fr
+      "leftSide . rightSide" 1fr
       "footer footer footer" auto
-      / 150fr 125fr 125fr;
+      / auto 0fr 50%;
     gap: 8px;
   }
   
   .header { grid-area: header; }
-  .celular { grid-area: celular;}
-  .preguntas {grid-area: preguntas; }
-  .espaciolibre {grid-area: espaciolibre;}
-  .footer { grid-area: footer; margin-left: 0px;}
-
-  .grid {
-    margin-left:410px ;
-  
-    display: grid;
-    grid-template-rows: repeat(3, 0fr);
-    grid-template-columns: repeat(2, 300px);
-    gap: 8px;
-  }
+  .leftSide { grid-area: leftSide; }
+  .rightSide { grid-area: rightSide; }
+  .footer { grid-area: footer; 
+}
 .chat{
     
     position: fixed;
@@ -142,8 +143,39 @@ button{
 }
 
 
-.chat 
+
 
 .imagen{
     border-radius: 20px;
 }
+.grid {
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 47%);
+    grid-template-columns: repeat(3, 25%);
+    gap: 8px;
+    
+  }
+
+#botonchat{
+    background-color:#c4c6c6 ;
+    margin-left: 80%;
+    bottom: 8%;
+    height: 32px;
+    width: 122px;
+    font-family: 'poppins', sans-serif;
+    text-align: right;
+    font-size: 17px;
+   
+}
+.imagenboton{
+    
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+
+
+ 
