@@ -6,3 +6,4 @@ function toggleAnswer(answerNumber) {
         answer.style.display = 'none';
     }
 }
+

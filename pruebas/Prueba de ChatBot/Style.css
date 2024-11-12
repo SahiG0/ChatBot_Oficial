@@ -10,6 +10,10 @@ body {
 
 }
 
+#posicionimg {
+    margin-left: 50%;
+}
+
 #pff {
     color: #003851;
     font: caption;
@@ -122,13 +126,55 @@ button{
     font-size: 17px;
    
 }
-.imagenboton{
-    
-    height: 20px;
-    width: 20px;
-    margin-right: 10px;
-    margin-top: 2px;
+
+#imgchat {
+   margin-top: 40%; 
+   margin-left: 50%;
 }
 
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: none; /* La tarjeta está oculta inicialmente */
+}
 
+.card img {
+    width: 100%;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+/* Contenedor del contenido de la tarjeta */
+.card-content {
+    padding: 15px;
+}
+
+/* Estilos para el título y descripción */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Estilos del botón */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #769ba9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
  

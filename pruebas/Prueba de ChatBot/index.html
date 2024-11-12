@@ -66,18 +66,35 @@
             <br>
             <br>
           
-            <button id="botonchat">
-              <a href="chat.html">Chatbot</a>          
-            </button>
-          
+            <div class="image-container">
+              <img id="imgchat" src="imgs/Información_General-removebg-preview.png" alt="Imagen de tarjeta" onclick="toggleTarjeta()">
+          </div>
+  
+      <div class="card" id="tarjeta">
+          <div class="card-content">
+              <h3 class="card-title">Chatbot</h3>
+              <p class="card-description">Hola! Soy el hospital de La Falda, te puedo ayudar en algo?</p>
+              <input type="Ingrese el texto">
+              <a href="#" class="card-button">Enviar</a>
+          </div>
+  
+          <script>
+              // Función para mostrar o ocultar la tarjeta al hacer clic en la imagen
+              function toggleTarjeta() {
+                  var tarjeta = document.getElementById("tarjeta");
+                  if (tarjeta.style.display === "none" || tarjeta.style.display === "") {
+                      tarjeta.style.display = "block";
+                  } else {
+                      tarjeta.style.display = "none";
+                  }
+              }
+          </script>
 
           
             
-            </div>
       </div>
     </section>  
   </main>  
-  <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/667ac7d2926bf5278bce2f30/667ac7d4926bf5278bce2f33.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
-
+  
 </body>
 </html>
